@@ -11,7 +11,11 @@ function Header() {
           {/* <span className="ml-2 text-xl font-semibold">Genie Mayele</span> */}
         </div>
         <button className="bg-gray-100 px-3 py-1 rounded-full text-sm">
-          GPT-4o Mini ▼
+          <select name="" id="">
+            <option value="">Lingala</option>
+            <option value="">Français</option>
+            <option value="">Anglais</option>
+          </select>
         </button>
       </header>
     )

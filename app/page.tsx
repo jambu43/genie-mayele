@@ -31,7 +31,7 @@ export default function Home() {
       {/* Featured Card */}
       <Card className="mx-4 my-2 overflow-hidden">
         <Image
-          src="/mayele-tech.jpg"
+          src="/mayele-smart.jpg"
           alt="2025 New Year"
           width={400}
           height={200}

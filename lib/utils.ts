@@ -36,21 +36,6 @@ export function slugify(text: string) {
     .replace(/[^\w-]+/g, "");
 }
 
-export function generateUniqueTicketNumber(): string {
-  // Parse the date string into a Date object
-  const date = new Date();
-
-  // Format the date in the desired format
-  const formattedDate = format(date, "yyyy-MM-dd");
-
-  // Generate 12 random digits
-  const randomDigits = Array.from({ length: 12 }, () =>
-    Math.floor(Math.random() * 10)
-  ).join("");
-
-  // Combine all parts to form the ticket number
-  return `rntc/reservation/${randomDigits}`;
-}
 
 export const extractIdOnYoutubeUrl = (url: string) => {
   // Extract the video ID from the YouTube URL: youtube.com/v=VIDEO_ID and youtu.be/VIDEO_ID

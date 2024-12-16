@@ -22,28 +22,10 @@ export default function CampaignStats() {
           {/* Campaign Images */}
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              <div className="aspect-[3/4] relative rounded-lg overflow-hidden">
+              <div className="aspect-[1/1] relative rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="/photos-pubs.png"
                   alt="Campaign billboard"
-                  className="object-cover"
-                  fill
-                />
-              </div>
-            </div>
-            <div className="space-y-4 pt-8">
-              <div className="aspect-video relative rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Bus stop campaign"
-                  className="object-cover"
-                  fill
-                />
-              </div>
-              <div className="aspect-square relative rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Poster campaign"
                   className="object-cover"
                   fill
                 />

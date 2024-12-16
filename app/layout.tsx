@@ -5,6 +5,7 @@ import "./globals.css";
 import "./globals.css";
 import Header from "@/components/header";
 import { ViewTransitions } from 'next-view-transitions'
+import Footer from "@/components/header/footer";
 
 
 const geistSans = localFont({
@@ -33,8 +34,11 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="fr" suppressHydrationWarning>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="max-w-md mx-auto bg-white min-h-screen flex flex-col">
           <Header />
           {children}
+          <Footer />
+          </div>
         </body>
       </html>
     </ViewTransitions>

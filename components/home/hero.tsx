@@ -4,8 +4,8 @@ import React from "react";
 function Hero() {
   return (
     <>
-      <div className={"relative pt-24 lg:pt-0  text-white min-h-[800px]"}>
-        <div className="container relative inset-0 z-10 gap-8 section flex  items-center flex-col lg:flex-row justify-center lg:justify-between min-h-[800px] lg:min-h-[650px]">
+      <div className={"relative pt-24 lg:pt-0  text-white min-h-[800px] bg-primary section"}>
+        <div className="container relative z-10  flex  items-center flex-col lg:flex-row justify-center lg:justify-between min-h-[800px] lg:min-h-[650px]">
           <div className="mb-16 max-w-3xl">
             <h1 className="mb-6 text-5xl font-bold leading-tight">
               Alliez technologie et créativité pour toucher votre public comme

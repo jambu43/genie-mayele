@@ -18,7 +18,7 @@ function Footer() {
           </Link>
         </button>
         <button className="flex flex-col items-center text-gray-400">
-         <Link href='/recent'>
+         <Link href='/recents'>
          <Clock className="h-6 w-6" />
          <span className="text-xs mt-1">Recents</span>
          </Link>

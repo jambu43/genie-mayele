@@ -18,8 +18,8 @@ export default function Home() {
         {[
           { name: "New", path: "" },
           { name: "Logo Creator", path: "/image" },
-          { name: "Signature ", path: "/pdf" },
-          { name: " Generator", path: "/image" },
+          { name: "Signature Creator", path: "/pdf" },
+          { name: "Image Generator", path: "/image" },
           { name: "Study Helper", path: "/chat" },
         ].map((tool, index) => (
           <div key={index} className="flex flex-col items-center">

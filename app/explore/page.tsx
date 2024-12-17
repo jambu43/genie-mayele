@@ -65,9 +65,9 @@ export default function Explore() {
           >
             Education
           </TabsTrigger>
-          <TabsTrigger value="art">Art & Design</TabsTrigger>
-          <TabsTrigger value="writing">Writing</TabsTrigger>
-          <TabsTrigger value="production">Production</TabsTrigger>
+          <TabsTrigger value="art" className="data-[state=active]:bg-primary/10 data-[state=active]:text-primary" >Art & Design</TabsTrigger>
+          <TabsTrigger value="writing" className="data-[state=active]:bg-primary/10 data-[state=active]:text-primary">Writing</TabsTrigger>
+          <TabsTrigger value="production" className="data-[state=active]:bg-primary/10 data-[state=active]:text-primary">Production</TabsTrigger>
         </TabsList>
       </Tabs>
 

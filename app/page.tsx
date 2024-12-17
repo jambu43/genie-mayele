@@ -1,9 +1,15 @@
+'use client'
+
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Send } from 'lucide-react'
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       {/* Tools */}
@@ -67,9 +73,13 @@ export default function Home() {
 
       {/* Message Input */}
       <div className="mt-auto p-4 flex items-center">
-        <Input placeholder="Write a message" className="flex-grow mr-2" />
-        <Button size="icon">
-          <Image src="/send-icon.svg" alt="Send" width={24} height={24} />
+      <Input 
+          placeholder="Write a message" 
+          className="flex-grow mr-2" 
+          onClick={() => router.push('/chat')}
+        />
+        <Button size="icon" onClick={() => router.push('/chat')}>
+          <Send className="w-5 h-5" />
         </Button>
       </div>
     </>

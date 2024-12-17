@@ -44,7 +44,7 @@ export default function ChatInterface() {
     setInputMessage('');
   };
   return (
-    <div className="flex flex-col h-screen bg-gray-50">
+    <div className="flex flex-col h-[560px] bg-gray-50">
 
 
       {/* Chat Area */}

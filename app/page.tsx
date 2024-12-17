@@ -56,14 +56,15 @@ export default function Home() {
       {/* Quick Actions */}
       <div className="grid grid-cols-2 gap-4 p-4">
         {[
-          { icon: "🖼️", label: "Image Generator" },
-          { icon: "🌐", label: "Ask Web" },
-          { icon: "📄", label: "Ask PDF" },
-          { icon: "🔍", label: "Image Analyzer" },
+          { icon: "🖼️", label: "Image Generator", path :"/image" },
+          { icon: "🌐", label: "Ask Study", path :"/study" },
+          { icon: "📄", label: "Ask PDF", path: "/pdf" },
+          { icon: "🔍", label: "Image Analyzer", path: "/analyse" },
         ].map((action) => (
           <button
             key={action.label}
             className="flex flex-col items-center justify-center bg-gray-100 p-4 rounded-lg"
+            onClick={() => router.push(`${action.path}`)}
           >
             <span className="text-2xl mb-2">{action.icon}</span>
             <span className="text-sm">{action.label}</span>

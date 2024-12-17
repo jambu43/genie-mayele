@@ -16,7 +16,7 @@ export default function Home() {
       {/* Tools */}
       <div className="flex justify-between px-4 py-2">
         {[
-          { name: "New", path: "" },
+          { name: "New", path: "/new" },
           { name: "Logo Creator", path: "/image" },
           { name: "Signature Creator", path: "/pdf" },
           { name: "Image Generator", path: "/image" },
